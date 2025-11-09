@@ -49,7 +49,7 @@ lexer.exe fuente.txt salida.txt
 Implementación de un **analizador sintáctico descendente recursivo (LL(1))** para el mismo lenguaje JSON simplificado utilizado en la Tarea 1.  
 Este programa valida si el contenido del archivo `fuente.txt` cumple la estructura sintáctica definida por la gramática BNF del lenguaje JSON.
 
-### ⚙️ Funcionamiento
+###  Funcionamiento
 1. El programa reutiliza un analizador léxico interno que genera una lista de tokens.
 2. Aplica reglas sintácticas recursivas para reconocer:
    - Objetos `{ ... }`

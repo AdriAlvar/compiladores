@@ -30,7 +30,6 @@ El programa lee por defecto `fuente.txt` y genera `salida.txt`.
 | `PR_FALSE` | `false` / `FALSE` |
 | `PR_NULL` | `null` / `NULL` |
 
----
 
 ## Compilación y ejecución
 ### En Linux:
@@ -76,3 +75,31 @@ parser.exe
 #### En linux
 g++ parser.cpp -o parser
 ./parser
+
+
+##  Tarea 3 – Traducción Dirigida por Sintaxis (JSON → XML)
+
+###  Descripción
+Implementación de un **traductor sintáctico** que convierte un archivo escrito en **JSON simplificado** (`fuente.txt`) a su equivalente en **XML** (`output.xml`).  
+El traductor extiende el analizador sintáctico recursivo de la Tarea 2, incorporando **acciones semánticas** durante el análisis para generar el archivo de salida.
+
+---
+
+### Funcionamiento
+1. **Lee** el archivo `fuente.txt` con la estructura JSON.
+2. **Analiza léxica y sintácticamente** el contenido.
+3. **Genera** el archivo `output.xml` con la traducción XML correspondiente.
+4. En caso de error, muestra mensajes descriptivos y continúa el análisis (modo *Panic Mode*).
+
+---
+
+###  Compilación y ejecución
+
+#### En Windows
+```bash
+g++ traductor.cpp -o traductor.exe
+traductor.exe
+
+#### En Linux
+g++ traductor.cpp -o traductor
+./traductor
